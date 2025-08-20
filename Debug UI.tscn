@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://fr7248favvjw"]
+
+[ext_resource type="Script" uid="uid://kjsnj1hemw5g" path="res://submodules/godot-debug-node/debug_ui.gd" id="1_wh5xw"]
+
+[node name="DebugUi" type="CanvasLayer"]
+script = ExtResource("1_wh5xw")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="FPSLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.211451, 0.354661, 0.638946, 1)
+
+[node name="DrawCallsLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.52549, 0.282353, 0.52549, 1)
+
+[node name="MemoryLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.153617, 0.399022, 0.276533, 1)
